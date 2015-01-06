@@ -1,10 +1,10 @@
 module.exports = [
 	{id:'A', label: 'A', checked: true},
   {id:'B',label: 'B'},
-  {id:'C',label: 'C', checked: true,
+  {id:'C',label: 'C',
     children: [
         {id:'C-A',label: 'C-A'},
-        {id:'C-B',label: 'C-B'},
+        {id:'C-B',label: 'C-B', checked: true},
         {id:'C-C',label: 'C-C',
           children: [
               {id:'C-C-A',label: 'C-C-A'},
