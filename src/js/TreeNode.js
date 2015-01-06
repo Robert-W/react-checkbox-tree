@@ -34,7 +34,7 @@ var TreeNode = React.createClass({
 
     return (
       <li className={containerClass}>
-        <span onClick={this.handleClick}>
+        <span onClick={this.handleClick} onTouchEnd={this.handleClick}>
           { node.children === undefined ? 
             '' :
             (this.state.collapsed ? String.fromCharCode(43) : String.fromCharCode(8722))
@@ -46,7 +46,7 @@ var TreeNode = React.createClass({
           onChange={this.props.handleChange}
           data-key={node.id}
          />
-        <span onClick={this.handleClick}>{node.label}</span>
+        <span onClick={this.handleClick} onTouchEnd={this.handleClick}>{node.label}</span>
         {childNodes}
       </li>
     );
