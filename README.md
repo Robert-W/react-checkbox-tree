@@ -4,7 +4,7 @@ react-checkbox-tree
 
 
 
-<strong>You can check out a live demo <a href=''>here</a>.</strong>
+<strong>You can check out a live demo <a href='http://robert-w.github.io/react-checkbox-tree'>here</a>.</strong>
 
 
 <p>This example is intended to be a very simple, yet flexible, tree widget with checkboxes for each node built in React.</p>
