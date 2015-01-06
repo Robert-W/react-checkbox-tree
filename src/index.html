@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset-'utf-8' />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>React Checkbox Tree Example</title>
+		<style>html,body{height:100%;width:100%;padding:0;margin:0;}</style>
+		<style>
+			.root {
+				margin: 20px;
+			}
+			.title {
+				font-weight: bold;
+				font-size: 32px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="root">
+			<div class="title">A Simple Flexible React Checkbox Tree</div>
+			<div class="description">
+				<p>
+					This example is very simple in that it is not intended to be a finished tree, rather a good starting point for a tree with some custom behavior.
+				</p>
+				<p>
+					This tree can have as many nested child nodes as desirable and does not have to have a root node.
+				</p>
+				<p>
+					View src/js/TreeData.js to see sample data structure, it needs to have some sort of way to identify the checkboxes so currently each node needs a unique id.
+				</p>
+				<p>
+					The checkboxes act independently of the tree. Clicking the &#43;/&#8722; icon or the label for the tree node will toggle the children.  Clicking a checkbox will activate the checkbox and if the checkbox is becoming checked, it will check all the children, else, it will only turn itself off and not it's children.  This behavior can be easily modified per your requirements for the tree.
+				</p>
+				<hr>
+			</div>
+			<div id="react-root">
+				
+			</div>
+		</div>
+		<script src="http://fb.me/react-0.12.2.js"></script>
+		<script src="js/bundle.js"></script>
+	</body>
+</html>
