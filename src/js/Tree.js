@@ -15,7 +15,7 @@ var Tree = React.createClass({
     var traverseNodes = function (node) {
       if (node.id === key) {
         node.checked = checked;
-        if (node.children && checked) { node.children.forEach(checkAllNodes); }
+        if (node.children) { node.children.forEach(checkAllNodes); }
       }
         
       if (node.children) {
@@ -24,7 +24,7 @@ var Tree = React.createClass({
     };
       
     var checkAllNodes = function (node) {
-      node.checked = true;
+      node.checked = checked;
       if (node.children) { node.children.forEach(checkAllNodes); }
     };
       
