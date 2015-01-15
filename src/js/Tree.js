@@ -28,9 +28,12 @@ var Tree = React.createClass({
       if (node.children) { node.children.forEach(checkAllNodes); }
     };
       
-    var dataSource = Object.create(this.state.data);
-    dataSource.forEach(traverseNodes);
-    this.setState({ data: dataSource });
+    // var dataSource = Object.create(this.state.data);
+    // dataSource.forEach(traverseNodes);
+    // this.setState({ data: dataSource });
+
+    this.state.data.forEach(traverseNodes);
+    this.setState(this.state.data);
   },
   
   render: function () {

@@ -45,7 +45,7 @@ var TreeNode = React.createClass({
           checked={node.checked || false}
           onChange={this.props.handleChange}
           data-key={node.id}
-         />
+        />
         <span onClick={this.handleClick} onTouchEnd={this.handleClick}>{node.label}</span>
         {childNodes}
       </li>
