@@ -24,5 +24,8 @@ react-checkbox-tree
 <p>To generate a minified bundle, run <code>npm run build</code></p>
 <p>If your curious about how the <code>build</code> and <code>start</code> command work, take a look at the package.json and the webpack.config.js to see the commands being run and the configurations being used by webpack.</p>
 
+## Gotchas
+<p>There is an onTouchEnd event in TreeNode.js in the render function paired with an onClick, this works perfect in this example but when using other libraries in combination with this tree, both of those events fire causing some strange behavior, if you see this when using it on mobile, remove the onTouchEnd events.</p>
+
 
 
